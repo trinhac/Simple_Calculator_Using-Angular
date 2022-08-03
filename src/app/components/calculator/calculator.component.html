@@ -1,0 +1,21 @@
+<div class=calculator>
+    <input [(ngModel)]="inputData" id="inputCalc" placeholder="0" readonly>
+    <div class="grid-container">
+        <div class="grid-item"><button value="7" id="btn" (click)="onClick('7')">7</button></div>
+        <div class="grid-item"><button value="8" id="btn" (click)="onClick('8')">8</button></div>
+        <div class="grid-item"><button value="9" id="btn" (click)="onClick('9')">9</button></div>
+        <div class="grid-item"><button value="*" id="btn" (click)="onClick('*')">x</button></div>
+        <div class="grid-item"><button value="4" id="btn" (click)="onClick('4')">4</button></div>
+        <div class="grid-item"><button value="5" id="btn" (click)="onClick('5')">5</button></div>
+        <div class="grid-item"><button value="6" id="btn" (click)="onClick('6')">6</button></div>
+        <div class="grid-item"><button value="/" id="btn" (click)="onClick('/')">/</button></div>
+        <div class="grid-item"><button value="1" id="btn" (click)="onClick('1')">1</button></div>
+        <div class="grid-item"><button value="2" id="btn" (click)="onClick('2')">2</button></div>
+        <div class="grid-item"><button value="3" id="btn" (click)="onClick('3')">3</button></div>
+        <div class="grid-item"><button value="+" id="btn" (click)="onClick('+')">+</button></div>
+        <div class="grid-item"><button value="0" id="btn" (click)="onClick('0')">0</button></div>
+        <div class="grid-item"><button value="C" id="btn" (reset)="reset()">C</button></div>
+        <div class="grid-item"><button value="=" id="btn" (click)="calculate()">=</button></div>
+        <div class="grid-item"><button value="-" id="btn" (click)="onClick('-')">-</button></div>
+    </div>
+</div>
